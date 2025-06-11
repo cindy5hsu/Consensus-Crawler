@@ -1,0 +1,187 @@
+body {
+    font-family: 'Microsoft JhengHei', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.header {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.conference-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.conference-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #555;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid #e1e1e1;
+}
+
+.category-badge {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem 0;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header .lead {
+        font-size: 1rem;
+    }
+    
+    .input-group {
+        margin-top: 1rem;
+    }
+}
+
+/* 加載動畫樣式 */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* 錯誤提示樣式 */
+.alert-danger {
+    background-color: #ffe5e5;
+    color: #d63031;
+    border-color: #ffcccc;
+}
+
+/* 警告提示樣式 */
+.alert-warning {
+    background-color: #fff8e5;
+    color: #e17055;
+    border-color: #ffeeba;
+}
+
+/* 信息提示樣式 */
+.alert-info {
+    background-color: #e5f7ff;
+    color: #0984e3;
+    border-color: #bee5eb;
+}
+
+/* 新增樣式 - 左側研討會列表 */
+#conferenceList {
+    max-height: 70vh;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#conferenceList .list-group-item {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    transition: all 0.2s ease;
+}
+
+#conferenceList .list-group-item:first-child {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+#conferenceList .list-group-item:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+#conferenceList .list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+#conferenceList .list-group-item.active {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+/* 新增樣式 - 右側摘要顯示區 */
+.summary-section {
+    min-height: 70vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.summary-section .card {
+    border: none;
+    box-shadow: none;
+}
+
+.summary-section .card-header {
+    background-color: #6c5ce7;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+.summary-content {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.summary-content ul {
+    padding-left: 1.5rem;
+}
+
+.summary-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* 搜索與過濾區樣式 */
+.search-box {
+    margin-bottom: 1rem;
+}
+
+.filter-section {
+    margin-bottom: 1rem;
+}
+
+/* 頁腳樣式 */
+footer {
+    margin-top: 3rem;
+}
